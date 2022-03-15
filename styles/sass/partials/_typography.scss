@@ -1,0 +1,67 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6, button, .read-more {
+    font-family: "Josefin Sans", sans-serif;
+    
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 8.3rem;
+}
+
+h2, h3, h4, h5, h6, button, .read-more {
+    font-weight: bold;
+}
+
+//Get in touch
+h2 {
+    font-size: 4rem;
+    line-height: 4.6rem;
+}
+
+//What is planted
+h3 {
+    font-size: 2.82rem;
+    letter-spacing: 0.065rem;
+}
+
+//Our Mission (blog page)
+h4 {
+    font-size: 2.15rem;
+    letter-spacing: 0.065rem;
+
+}
+
+//Planted's founder
+h5 {
+    font-size: 2.1rem;
+    letter-spacing: 0.05rem;
+}
+
+//upcoming, Unique
+h6 {
+    font-size: 1.6rem;
+    letter-spacing: 0.05rem;
+}
+
+//comment header
+// h6 { will decide what header to use later }
+
+.read-more, button {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+}
+
+
+
+
