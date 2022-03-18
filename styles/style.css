@@ -235,6 +235,7 @@ html {
   overflow: hidden;
 }
 
+/* colors */
 html {
   font-size: 125%;
 }
@@ -287,4 +288,40 @@ h6 {
   font-size: 1rem;
   line-height: 1.6rem;
   letter-spacing: 0.05rem;
+}
+
+/* wrapper */
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* background colours */
+section:nth-child(odd) {
+  background: #F0EFED;
+}
+
+/* text styling */
+a {
+  text-decoration: none;
+}
+a:focus, a:hover {
+  border: 2px dotted #074115;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* image */
+img {
+  max-width: 100%;
+}
+
+/* buttons */
+.read-more {
+  display: inline-block;
+  background: #0E902D;
+  color: white;
+  padding: 10px;
 }

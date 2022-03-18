@@ -1,0 +1,39 @@
+/* wrapper */
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* background colours */
+section:nth-child(odd) {
+    background: $off-white;
+}
+
+/* text styling */ 
+a {
+    text-decoration:none;
+
+    &:focus,
+    &:hover {
+        border: 2px dotted $forest-green;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* image */ 
+img {
+    max-width: 100%;
+}
+
+/* buttons */ 
+.read-more {
+    display: inline-block;
+    background: $green;
+    color: white;
+    padding: 10px;
+
+
+}
