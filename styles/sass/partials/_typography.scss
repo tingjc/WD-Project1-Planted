@@ -13,17 +13,26 @@ h1, h2, h3, h4, h5, h6, button, .read-more {
     
 }
 
+//Planted nav
 h1 {
-    font-weight: normal;
+    font-size: 1rem;
+    font-weight: 300;
+} 
+
+//Planted invitation
+h2 {
+    font-weight: 400;
     font-size: 8.3rem;
+    line-height: 8.3rem;
 }
 
-h2, h3, h4, h5, h6, button, .read-more {
-    font-weight: bold;
+h3, h4, h5, h6, button, .read-more {
+    font-weight: 700;
 }
+
 
 //Get in touch
-h2 {
+h4 {
     font-size: 4rem;
     line-height: 4.6rem;
 }
@@ -35,7 +44,7 @@ h3 {
 }
 
 //Our Mission (blog page)
-h4 {
+.blog h3 {
     font-size: 2.15rem;
     letter-spacing: 0.065rem;
 

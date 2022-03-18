@@ -251,15 +251,21 @@ h1, h2, h3, h4, h5, h6, button, .read-more {
 }
 
 h1 {
-  font-weight: normal;
-  font-size: 8.3rem;
-}
-
-h2, h3, h4, h5, h6, button, .read-more {
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 h2 {
+  font-weight: 400;
+  font-size: 8.3rem;
+  line-height: 8.3rem;
+}
+
+h3, h4, h5, h6, button, .read-more {
+  font-weight: 700;
+}
+
+h4 {
   font-size: 4rem;
   line-height: 4.6rem;
 }
@@ -269,7 +275,7 @@ h3 {
   letter-spacing: 0.065rem;
 }
 
-h4 {
+.blog h3 {
   font-size: 2.15rem;
   letter-spacing: 0.065rem;
 }
@@ -338,3 +344,37 @@ footer {
 footer p {
   margin: 0 auto;
 }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  height: 75vh;
+  /* Background Image */
+  background-image: url(../planted-final-assets/home-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* text color */
+  color: white;
+}
+header span {
+  color: #F8E71C;
+  display: block;
+}
+
+/* image block */

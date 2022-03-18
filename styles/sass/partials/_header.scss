@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    height: 75vh;
+/* Background Image */ 
+    background-image: url(../planted-final-assets/home-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/* text color */
+    color: white;
+
+    span {
+        color: $sunny-yellow;
+        display: block;
+    } //end span
+
+}
+/* image block */ 
+
