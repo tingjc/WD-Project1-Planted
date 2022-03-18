@@ -15,7 +15,7 @@ a {
 
     &:focus,
     &:hover {
-        border: 2px dotted $forest-green;
+        background: $sunny-yellow;
     }
 }
 
@@ -36,4 +36,18 @@ img {
     padding: 10px;
 
 
+}
+
+/* footer */ 
+footer {
+    display: block;
+    background: $black;
+    color: $off-white;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+
+    p {
+        margin: 0 auto;
+    }
 }
