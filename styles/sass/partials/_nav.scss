@@ -1,8 +1,14 @@
 nav {
     display: flex;
-    
+    flex-direction: column;
+
     ul {
         display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 0;
+
+    
     } //end ul
 
 } // end nav
