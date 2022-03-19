@@ -4,10 +4,20 @@
     margin: 0 auto;
 }
 
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main {
+    text-align: center;
+}
+
 /* background colours */
 section:nth-child(odd) {
     background: $off-white;
 }
+
 
 /* text styling */ 
 a {

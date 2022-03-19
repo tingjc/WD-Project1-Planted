@@ -264,6 +264,10 @@ h3, h4, h5, h6, button, .read-more {
   font-weight: 700;
 }
 
+h3, h4, h5, h6 {
+  margin: 0;
+}
+
 h4 {
   font-size: 2rem;
   line-height: 2.3rem;
@@ -300,6 +304,15 @@ h6 {
 .wrapper {
   width: 95%;
   margin: 0 auto;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main {
+  text-align: center;
 }
 
 /* background colours */
@@ -353,17 +366,25 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-transform: uppercase;
 }
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 0;
+}
+nav span {
+  color: #F8E71C;
 }
 
 header {
