@@ -16,6 +16,11 @@ header {
         display: block;
     } //end span
 
+    i {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
 /*container shenanigans*/ 
     .top-container {
         display: flex;
@@ -25,11 +30,13 @@ header {
         display: flex;
         flex-direction: column;
     }
+
 /* Nav section */ 
     nav {
         display: flex;
         flex-direction: column;
         text-transform: uppercase;
+        padding: 100px;
     
         ul {
             display: flex;
@@ -37,6 +44,10 @@ header {
             justify-content: space-between;
             flex-wrap: wrap;
             padding-left: 0;
+
+            li {
+                margin: 10px;
+            }
     
         
         } //end ul
@@ -44,8 +55,42 @@ header {
         span {
             color: $sunny-yellow;
         }
+
+        //nav positioning shenanigans
+        position: fixed;
+        top: -500px;
+        right: 10%;
+        transition: 0.5s;
+
+        background-color: rgba(0, 0, 0, 0.9);
+        a {
+            color: white;
+            &:visited {
+                color : $off-white;
+            } //end visited
+        } //end anchor
     
     } // end nav
+
+/* checkbox Menu button */
+    input[type=checkbox] {
+        opacity: 0;
+        
+        &:checked ~ nav {
+            top: 100px; 
+        }
+
+        &:checked ~ label {
+            color: $sunny-yellow;
+        }
+
+
+
+
+        &:focus + label {
+            border: 1px dotted $sunny-yellow;
+        }
+    }
 }
 /* image block */ 
 
