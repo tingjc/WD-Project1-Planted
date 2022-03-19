@@ -16,6 +16,15 @@ header {
         display: block;
     } //end span
 
+/*container shenanigans*/ 
+    .top-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 /* image block */ 
 
