@@ -516,10 +516,21 @@ header .img-container {
 
 /*Blog-page header */
 .blog-header {
+  height: 350px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   text-align: left;
+}
+
+.page-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .comments-section h6 {
@@ -618,3 +629,29 @@ section {
 }
 
 /* BLOG PAGE */
+span,
+span a,
+.date {
+  color: #074115;
+}
+
+.date span,
+span a {
+  font-weight: 700;
+}
+
+.blog-post {
+  padding-top: 0;
+}
+.blog-post .post-img {
+  -webkit-box-shadow: -10px 10px 1px #F8E71C;
+          box-shadow: -10px 10px 1px #F8E71C;
+}
+.blog-post .img-container {
+  margin-bottom: 20px;
+}
+.blog-post article {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #F8E71C;
+}

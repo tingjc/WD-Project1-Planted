@@ -131,8 +131,15 @@ header {
 
 /*Blog-page header */
 .blog-header {
+    height: 350px;
     align-items: flex-start;
     text-align: left;
+}
+
+.page-title {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
 }
 
 .comments-section {

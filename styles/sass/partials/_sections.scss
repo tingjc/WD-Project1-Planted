@@ -91,4 +91,34 @@ section {
 }
 
 /* BLOG PAGE */ 
-.wrapper {}
+span,
+span a,
+.date {
+    color: $forest-green;
+}
+
+.date span,
+span a {
+    font-weight: 700;
+}
+
+//blog post
+.blog-post {
+    padding-top: 0;
+
+    .post-img {
+        box-shadow: -10px 10px 1px $sunny-yellow;
+    }
+
+    .img-container {
+        margin-bottom: 20px;
+    }
+
+    article {
+        padding: 10px;
+        margin-bottom: 20px;
+
+        border-bottom: 5px solid $sunny-yellow;
+
+    }
+}
