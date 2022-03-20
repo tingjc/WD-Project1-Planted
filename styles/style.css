@@ -516,6 +516,7 @@ header .img-container {
 
 /*Blog-page header */
 .blog-header {
+  background-position: bottom;
   height: 350px;
   -webkit-box-align: start;
       -ms-flex-align: start;
