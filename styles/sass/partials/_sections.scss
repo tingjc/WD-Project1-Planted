@@ -37,3 +37,33 @@ section {
         }
     }
 }
+
+/* info-nav styling */ 
+
+.info-nav {
+    li {
+        display: flex;
+        margin-bottom: 50px;
+
+        i {
+            display: inline-block;
+            background: $sunny-yellow;
+            border: 1px solid $sunny-yellow;
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 20px;
+        }
+    }
+}
+
+/* filler-image */
+.filler-image {
+    height: 200px;
+    width: 100%;
+    padding: 20px 5px;
+    background-image: url(../planted-final-assets/banner-image.jpg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+
+}

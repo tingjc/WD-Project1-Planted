@@ -368,6 +368,15 @@ footer p {
   margin: 0 auto;
 }
 
+/* font-awesome icon rendering */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* Background Image */
 .index {
   background-image: url(../planted-final-assets/home-image-1.jpg);
@@ -545,4 +554,31 @@ section {
 .announcements .container:nth-child(even) img {
   -webkit-box-shadow: -10px -10px 1px #F8E71C;
           box-shadow: -10px -10px 1px #F8E71C;
+}
+
+/* info-nav styling */
+.info-nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+.info-nav li i {
+  display: inline-block;
+  background: #F8E71C;
+  border: 1px solid #F8E71C;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+/* filler-image */
+.filler-image {
+  height: 200px;
+  width: 100%;
+  padding: 20px 5px;
+  background-image: url(../planted-final-assets/banner-image.jpg);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
 }
