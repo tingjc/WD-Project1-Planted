@@ -67,3 +67,25 @@ section {
     background-repeat: no-repeat;
 
 }
+
+/* founder */
+.founder {
+    .img-container {
+        margin: 20px auto;
+        padding-bottom: 20px;
+        
+        img {
+            box-shadow: 10px 10px 1px $sunny-yellow;
+        }
+    }
+}
+
+/* gallery */
+.gallery {
+    ul {
+        display: flex;
+        li:not(li:first-child) {
+            display: none;
+        }
+    }
+}

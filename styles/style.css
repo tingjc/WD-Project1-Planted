@@ -286,6 +286,7 @@ h3 {
 
 h5 {
   font-size: 2.1rem;
+  line-height: 2.2rem;
   letter-spacing: 0.05rem;
 }
 
@@ -405,7 +406,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0;
-  height: 80vh;
+  height: 550px;
   width: 100%;
   /* text color */
   color: white;
@@ -509,7 +510,7 @@ header .img-container {
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: relative;
-  bottom: 5%;
+  bottom: -20px;
   margin: 0 auto;
 }
 
@@ -581,4 +582,24 @@ section {
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
+}
+
+/* founder */
+.founder .img-container {
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+.founder .img-container img {
+  -webkit-box-shadow: 10px 10px 1px #F8E71C;
+          box-shadow: 10px 10px 1px #F8E71C;
+}
+
+/* gallery */
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery ul li:not(li:first-child) {
+  display: none;
 }
