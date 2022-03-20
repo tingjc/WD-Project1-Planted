@@ -6,8 +6,34 @@
     display: inline-block;
     text-align: center;
     align-self: center;
+    margin-top: 30px;
 }
 .what-is {
-    padding: 100px 5px 100px 5px;
+    padding: 150px 5px 200px 5px;
 }
 
+section {
+    padding: 50px 5px;
+}
+
+.container {
+    padding: 0px 5px 100px 5px;
+}
+
+/* .announcements */ 
+.announcements {
+    .img-container {
+        margin-bottom: 20px;
+        img {
+            box-shadow: 10px 10px 1px $sunny-yellow;
+        }
+    }
+
+    .container {
+        &:nth-child(even) {
+            img {
+                box-shadow: -10px -10px 1px $sunny-yellow;
+            }
+        }
+    }
+}

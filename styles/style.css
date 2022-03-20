@@ -338,6 +338,7 @@ a:focus, a:hover {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 /* image */
@@ -518,8 +519,30 @@ header .img-container {
   text-align: center;
   -ms-flex-item-align: center;
       align-self: center;
+  margin-top: 30px;
 }
 
 .what-is {
-  padding: 100px 5px 100px 5px;
+  padding: 150px 5px 200px 5px;
+}
+
+section {
+  padding: 50px 5px;
+}
+
+.container {
+  padding: 0px 5px 100px 5px;
+}
+
+/* .announcements */
+.announcements .img-container {
+  margin-bottom: 20px;
+}
+.announcements .img-container img {
+  -webkit-box-shadow: 10px 10px 1px #F8E71C;
+          box-shadow: 10px 10px 1px #F8E71C;
+}
+.announcements .container:nth-child(even) img {
+  -webkit-box-shadow: -10px -10px 1px #F8E71C;
+          box-shadow: -10px -10px 1px #F8E71C;
 }
