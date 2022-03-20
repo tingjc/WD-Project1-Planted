@@ -4,10 +4,12 @@ header {
     align-items: center;
     margin-top: 0;
     height: 80vh;
+    width: 100%;
 /* Background Image */ 
     background-image: url(../planted-final-assets/home-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 /* text color */
     color: white;
 
@@ -23,8 +25,18 @@ header {
 
 /*container shenanigans*/ 
     .top-container {
+        width: 100%;
+        background: black;
+        
+    }
+    .index-top-container {
+        width: 100%;
+        background: transparent;
+    }
+    .wrapper {
         display: flex;
         justify-content: space-between;
+        
     }
     .nav-container {
         display: flex;
@@ -63,7 +75,7 @@ header {
         z-index: 10;
         transition: 0.5s;
 
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.95);
         a {
             color: white;
             &:visited {
@@ -99,7 +111,8 @@ header {
 
         position: relative;
         bottom: 5%;
-        left: 20%;
+        
+        margin: 0 auto;
 
     }
 } // end header
