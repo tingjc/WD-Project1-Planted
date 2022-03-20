@@ -300,19 +300,27 @@ h6 {
   letter-spacing: 0.05rem;
 }
 
+/* Skip Link - template taken from https://css-tricks.com/how-to-create-a-skip-to-content-link/*/
+.skip-to-content {
+  height: 30px;
+  padding: 8px;
+  position: absolute;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.skip-to-content:focus {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 /* wrapper */
 .wrapper {
   width: 95%;
   margin: 0 auto;
-}
-
-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-main {
-  text-align: center;
 }
 
 /* background colours */
@@ -325,7 +333,7 @@ a {
   text-decoration: none;
 }
 a:focus, a:hover {
-  background: #F8E71C;
+  background: #074115;
 }
 
 ul {
@@ -359,6 +367,22 @@ footer p {
   margin: 0 auto;
 }
 
+/* Background Image */
+.index {
+  background-image: url(../planted-final-assets/home-image-1.jpg);
+}
+
+.blog {
+  background-image: url(../planted-final-assets/blog-header-1.jpg);
+}
+
+.index,
+.blog {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,11 +397,6 @@ header {
   margin-top: 0;
   height: 80vh;
   width: 100%;
-  /* Background Image */
-  background-image: url(../planted-final-assets/home-image-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   /* text color */
   color: white;
   /*container shenanigans*/
@@ -482,4 +501,25 @@ header .img-container {
   position: relative;
   bottom: 5%;
   margin: 0 auto;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.read-more {
+  display: inline-block;
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.what-is {
+  padding: 100px 5px 100px 5px;
 }

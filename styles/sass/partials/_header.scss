@@ -1,3 +1,19 @@
+/* Background Image */
+.index {
+    background-image: url(../planted-final-assets/home-image-1.jpg);
+}
+
+.blog {
+    background-image: url(../planted-final-assets/blog-header-1.jpg);
+}
+
+.index,
+.blog {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -5,11 +21,7 @@ header {
     margin-top: 0;
     height: 80vh;
     width: 100%;
-/* Background Image */ 
-    background-image: url(../planted-final-assets/home-image-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
 /* text color */
     color: white;
 

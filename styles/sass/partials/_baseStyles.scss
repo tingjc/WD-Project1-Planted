@@ -1,16 +1,18 @@
+/* Skip Link - template taken from https://css-tricks.com/how-to-create-a-skip-to-content-link/*/
+.skip-to-content {
+    height: 30px;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+    &:focus {
+        transform: translateY(0%);
+    }
+}   
 /* wrapper */
 .wrapper {
     width: 95%;
     margin: 0 auto;
-}
-
-section {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-main {
-    text-align: center;
 }
 
 /* background colours */
@@ -25,7 +27,7 @@ a {
 
     &:focus,
     &:hover {
-        background: $sunny-yellow;
+        background: $forest-green;
     }
 }
 
