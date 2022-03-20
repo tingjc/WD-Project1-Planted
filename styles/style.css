@@ -383,12 +383,12 @@ footer p {
   background-image: url(../planted-final-assets/home-image-1.jpg);
 }
 
-.blog {
+.blog-header {
   background-image: url(../planted-final-assets/blog-header-1.jpg);
 }
 
 .index,
-.blog {
+.blog-header {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -514,6 +514,19 @@ header .img-container {
   margin: 0 auto;
 }
 
+/*Blog-page header */
+.blog-header {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+.comments-section h6 {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
 .text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,3 +616,5 @@ section {
 .gallery ul li:not(li:first-child) {
   display: none;
 }
+
+/* BLOG PAGE */

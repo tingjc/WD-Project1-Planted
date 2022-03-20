@@ -3,12 +3,12 @@
     background-image: url(../planted-final-assets/home-image-1.jpg);
 }
 
-.blog {
+.blog-header {
     background-image: url(../planted-final-assets/blog-header-1.jpg);
 }
 
 .index,
-.blog {
+.blog-header {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -129,4 +129,15 @@ header {
     }
 } // end header
 
+/*Blog-page header */
+.blog-header {
+    align-items: flex-start;
+    text-align: left;
+}
 
+.comments-section {
+    h6 {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+}
