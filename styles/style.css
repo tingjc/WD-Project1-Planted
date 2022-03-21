@@ -506,7 +506,7 @@ header input[type=checkbox]:focus + label {
   border: 1px dotted #F8E71C;
 }
 header .img-container {
-  max-width: 60%;
+  max-width: 40%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: relative;
