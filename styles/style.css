@@ -588,13 +588,13 @@ section {
 }
 
 /* info-nav styling */
-.info-nav li {
+.info-nav .info-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
 }
-.info-nav li i {
+.info-nav .info-block i {
   display: inline-block;
   background: #F8E71C;
   border: 1px solid #F8E71C;
@@ -615,6 +615,15 @@ section {
 }
 
 /* founder */
+.founder .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .founder .img-container {
   margin: 20px auto;
   padding-bottom: 20px;
@@ -655,6 +664,13 @@ span a {
 }
 
 .blog-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 0;
 }
 .blog-post .post-img {
@@ -663,6 +679,8 @@ span a {
 }
 .blog-post .img-container {
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 1000px;
 }
 .blog-post article {
   padding: 10px;
@@ -670,6 +688,31 @@ span a {
   border-bottom: 5px solid #F8E71C;
 }
 
+/* Portrait tablet and small desktops */
+@media (min-width: 520px) {
+  .accent-image {
+    max-width: 40%;
+  }
+}
+@media (min-width: 660px) {
+  .info-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .info-nav ul li {
+    display: inline-block;
+    width: 50%;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+/* Form template taken from Juno WebDev Bootcamp Code-along */
 .contactForm {
   width: calc(50% - 70px);
   margin-left: 70px;

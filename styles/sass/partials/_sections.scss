@@ -59,7 +59,7 @@ section {
 /* info-nav styling */ 
 
 .info-nav {
-    li {
+    .info-block {
         display: flex;
         margin-bottom: 50px;
 
@@ -88,6 +88,10 @@ section {
 
 /* founder */
 .founder {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
     .img-container {
         margin: 20px auto;
         padding-bottom: 20px;
@@ -127,6 +131,8 @@ span a {
 
 //blog post
 .blog-post {
+    display: flex;
+    flex-direction: column;
     padding-top: 0;
 
     .post-img {
@@ -135,6 +141,8 @@ span a {
 
     .img-container {
         margin-bottom: 20px;
+        width: 100%;
+        max-width: 1000px;
     }
 
     article {
