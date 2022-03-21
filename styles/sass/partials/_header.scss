@@ -54,6 +54,13 @@ header {
         display: flex;
         flex-direction: column;
     }
+// header title itself
+    .page-title {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        z-index: 9;
+    }
 
 /* Nav section */ 
     nav {
@@ -137,11 +144,7 @@ header {
     text-align: left;
 }
 
-.page-title {
-    display: flex;
-    height: 100%;
-    align-items: flex-end;
-}
+
 
 .comments-section {
     h6 {
