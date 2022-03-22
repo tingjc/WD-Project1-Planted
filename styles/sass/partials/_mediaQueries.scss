@@ -199,22 +199,58 @@
     }
     
 /* Blog styles */
+    .blog-header {
+        height: 550px;
+    }
+
     main.blog-main {
         background-color: $off-white;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
 
+        section:nth-child(odd) {
+            background: transparent;
+        }
+        
+
     }
 
     .blog-post {
         width: 800px;
+        position: relative;
+        top: -150px;
+
+        .wrapper {
+            width: 95%;
+        }
+
+        .comments-section h5 {
+            padding-bottom: 50px;
+        }
+
+        .comment {
+            display: flex;
+            justify-content: space-between;
+        }
+
     }
 
     .extra-info {
+        top: 350px;
+        left: 1%;
+
+        flex-direction: column;
 
         background-color: white;
-        width: 400px;
+        width: 350px;
         height: 600px;
+
+        img {
+            position: absolute;
+            top: -270px;
+            left: -100px;
+            max-width: 450px;
+        }
     }
 } // end query

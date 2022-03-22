@@ -42,5 +42,19 @@ span a {
 }
 
 .extra-info {
-    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    .img-container {
+        width: 40%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .wrapper {
+        max-width: 400px;
+    }
+    .recent-extra {
+        ul {
+            list-style: inside;
+        }
+    }
 }

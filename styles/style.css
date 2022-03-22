@@ -350,7 +350,7 @@ main a:focus, main a:hover {
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
 }
 
@@ -402,6 +402,10 @@ footer p {
   background-image: url(../planted-final-assets/blog-header-1.jpg);
 }
 
+.contact-header {
+  background-image: url(../planted-final-assets/contact-header-1.jpg);
+}
+
 .index,
 .blog-header {
   background-size: cover;
@@ -434,6 +438,12 @@ header {
   /* Nav section */
   /* checkbox Menu button */
   /*top image block */
+}
+header a h1 {
+  color: white;
+}
+header a h1:visited {
+  color: white;
 }
 header span {
   color: #F8E71C;
@@ -499,6 +509,9 @@ header nav {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.95);
+}
+header nav a:focus, header nav a:hover {
+  background: #074115;
 }
 header nav ul {
   display: -webkit-box;
@@ -732,62 +745,21 @@ span a {
 }
 
 .extra-info {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-
-/* BLOG PAGE */
-span,
-span a,
-.date {
-  color: #074115;
+.extra-info .img-container {
+  width: 40%;
+  max-width: 500px;
+  margin: 0 auto;
 }
-
-.date span,
-span a {
-  font-weight: 700;
+.extra-info .wrapper {
+  max-width: 400px;
 }
-
-.blog-post {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.blog-post .post-img {
-  -webkit-box-shadow: -10px 10px 1px #F8E71C;
-          box-shadow: -10px 10px 1px #F8E71C;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.blog-post .img-container {
-  margin-bottom: 20px;
-  width: 100%;
-  max-width: 800px;
-}
-.blog-post article {
-  padding: 10px;
-  margin-bottom: 20px;
-  border-bottom: 5px solid #F8E71C;
-}
-.blog-post .comment {
-  padding: 20px 0;
-}
-
-.extra-info {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.extra-info .recent-extra ul {
+  list-style: inside;
 }
 
 @media (min-width: 660px) {
@@ -977,6 +949,10 @@ span a {
   }
 
   /* Blog styles */
+  .blog-header {
+    height: 550px;
+  }
+
   main.blog-main {
     background-color: #F0EFED;
     display: -webkit-box;
@@ -989,15 +965,46 @@ span a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  main.blog-main section:nth-child(odd) {
+    background: transparent;
+  }
 
   .blog-post {
     width: 800px;
+    position: relative;
+    top: -150px;
+  }
+  .blog-post .wrapper {
+    width: 95%;
+  }
+  .blog-post .comments-section h5 {
+    padding-bottom: 50px;
+  }
+  .blog-post .comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .extra-info {
+    top: 350px;
+    left: 1%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: white;
-    width: 400px;
+    width: 350px;
     height: 600px;
+  }
+  .extra-info img {
+    position: absolute;
+    top: -270px;
+    left: -100px;
+    max-width: 450px;
   }
 }
 /* Form template taken from Juno WebDev Bootcamp Code-along */
