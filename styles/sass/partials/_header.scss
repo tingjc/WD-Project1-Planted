@@ -14,6 +14,10 @@
     background-attachment: fixed;
 }
 
+h1 {
+    z-index: 10;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -21,6 +25,8 @@ header {
     margin-top: 0;
     height: 550px;
     width: 100%;
+
+    position: relative;
 
 /* text color */
     color: white;
@@ -59,7 +65,7 @@ header {
         display: flex;
         height: 100%;
         align-items: flex-end;
-        z-index: 9;
+        z-index: 8;
     }
 
 /* Nav section */ 
@@ -88,10 +94,10 @@ header {
         }
 
         //nav positioning shenanigans
-        position: fixed;
+        position: absolute;
         top: -500px;
-        right: 10%;
-        z-index: 10;
+        right: 25%;
+        z-index: 9;
         transition: 0.5s;
 
         background-color: rgba(0, 0, 0, 0.95);
@@ -123,6 +129,20 @@ header {
             border: 1px dotted $sunny-yellow;
         }
     }
+
+    /*top image block */
+.accent-image {
+    max-width: 500px;
+    width: 50%;
+
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    z-index: 7;
+    
+    margin: 0 auto;
+
+}
 } // end header
 
 /*Blog-page header */
