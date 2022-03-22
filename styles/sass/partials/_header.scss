@@ -59,6 +59,11 @@ header {
     .nav-container {
         display: flex;
         flex-direction: column;
+
+        label {
+            position: relative;
+            bottom: 25%;
+        }
     }
 // header title itself
     .page-title {

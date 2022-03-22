@@ -454,6 +454,10 @@ header .nav-container {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+header .nav-container label {
+  position: relative;
+  bottom: 25%;
+}
 header .page-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -682,26 +686,45 @@ span a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .blog-post .post-img {
   -webkit-box-shadow: -10px 10px 1px #F8E71C;
           box-shadow: -10px 10px 1px #F8E71C;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .blog-post .img-container {
   margin-bottom: 20px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
 }
 .blog-post article {
   padding: 10px;
   margin-bottom: 20px;
   border-bottom: 5px solid #F8E71C;
 }
+.blog-post .comment {
+  padding: 20px 0;
+}
+
+.extra-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 
 @media (min-width: 660px) {
   .accent-image {
     width: 35%;
     bottom: 0;
+  }
+
+  .blog-header {
+    height: 400px;
   }
 
   .info-nav ul {
@@ -813,6 +836,17 @@ span a {
     padding: 1px 5px;
     height: 250px;
   }
+
+  /* Blog styles */
+  .blog-post .wrapper {
+    width: 80%;
+  }
+  .blog-post article {
+    padding: 50px 10px;
+  }
+  .blog-post .comments-section {
+    padding: 50px;
+  }
 }
 @media (min-width: 900px) {
   .announcements {
@@ -862,6 +896,30 @@ span a {
 @media (min-width: 1000px) {
   .wrapper {
     width: 80%;
+  }
+
+  /* Blog styles */
+  main.blog-main {
+    background-color: #F0EFED;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .blog-post {
+    width: 800px;
+  }
+
+  .extra-info {
+    background-color: white;
+    width: 400px;
+    height: 600px;
   }
 }
 /* Form template taken from Juno WebDev Bootcamp Code-along */

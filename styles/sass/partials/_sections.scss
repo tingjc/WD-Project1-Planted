@@ -126,15 +126,17 @@ span a {
     display: flex;
     flex-direction: column;
     padding-top: 0;
+    align-items: center;
 
     .post-img {
         box-shadow: -10px 10px 1px $sunny-yellow;
+        object-fit: cover;
     }
 
     .img-container {
         margin-bottom: 20px;
         width: 100%;
-        max-width: 1000px;
+        max-width: 800px;
     }
 
     article {
@@ -144,4 +146,12 @@ span a {
         border-bottom: 5px solid $sunny-yellow;
 
     }
+
+    .comment {
+        padding: 20px 0;
+    }
+}
+
+.extra-info {
+    flex-direction: column;
 }
