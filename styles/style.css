@@ -335,10 +335,6 @@ a {
   text-decoration: none;
 }
 
-header a:focus, header a:hover {
-  background: #074115;
-}
-
 main a {
   color: black;
 }

@@ -28,13 +28,6 @@ a {
 
 }
 
-header a{
-    &:focus,
-    &:hover {
-        background: $forest-green;
-    }
-}
-
 main a {
     color: black;
     &:visited {
