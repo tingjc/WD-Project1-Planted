@@ -26,9 +26,23 @@ section:nth-child(odd) {
 a {
     text-decoration:none;
 
+}
+
+header a{
     &:focus,
     &:hover {
         background: $forest-green;
+    }
+}
+
+main a {
+    color: black;
+    &:visited {
+        color: $black;
+    }
+    &:focus,
+    &:hover {
+        border: 2px dotted $black;
     }
 }
 
@@ -48,6 +62,9 @@ img {
     display: inline-block;
     background: $green;
     color: white;
+    &:visited {
+        color: white;
+    }
     padding: 10px;
 
 

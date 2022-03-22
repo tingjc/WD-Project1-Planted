@@ -137,6 +137,7 @@
         position: relative;
 
         .container {
+            max-width: 1000px;
             padding: 0px;
             display: flex;
             justify-content: space-between;
@@ -190,6 +191,13 @@
     .wrapper {
         width: 80%;
     }
+
+    .filler-image {
+        .img-container {
+            background-size: contain;
+        }
+    }
+    
 /* Blog styles */
     main.blog-main {
         background-color: $off-white;
@@ -204,6 +212,7 @@
     }
 
     .extra-info {
+
         background-color: white;
         width: 400px;
         height: 600px;
