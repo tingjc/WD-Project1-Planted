@@ -42,23 +42,52 @@
     </header>
     
     <main class="contact-main" id="main">
-        <div class="form">
-            <!--form template lifted from Juno WebDev Bootcamp-->
-            <form action="#" method="POST" class="contactForm" name="contactForm">
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" id="name" placeholder="Name">
+        <div class="wrapper">
+            <section class="contactNav">
+                <nav>
+                    <ul>
+                        <li><a href="#" title="link to Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a></li>
+                        <li><a href="#" title="link to Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a></li>
+                        <li><a href="#" title="link to Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                        <li><a href="#" title="link to Whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a></li>
+                    </ul>
+                </nav>
+                <div class="text">
+                    <ul class="address">
+                        <li>info@email.com</li>
+                        <li>123-456-7890</li>
+                        <li>123 Queen Street West, Unit 10</li>
+                        <li>Toronto, Ontario</li>
+                        <li>M5V2D5</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="form">
+                <div>
+                    <!--form template lifted from Juno WebDev Bootcamp-->
+                    <form action="#" method="POST" class="contactForm" name="contactForm">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
 
-                <label for="email" class="sr-only">Email</label>
-                <input type="email" id="email" placeholder="Email">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email">
 
-                <label for="message" class="sr-only">Message for me</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
+                        <label for="message" class="sr-only">Message for me</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
 
-                <button class="read-more">Post Comment</button>
-
-
-            </form>
-        </div> <!-- .form END-->
+                        <button class="read-more">Post Comment</button>
+                    </form>
+                </div>
+            </section>
+        </div> <!--.wrapper END-->
     </main>
     
 </body>

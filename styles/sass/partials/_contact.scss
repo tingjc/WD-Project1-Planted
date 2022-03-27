@@ -1,0 +1,22 @@
+.contact-main {
+    background-color: $off-white;
+    .wrapper {
+        display: flex;
+    }
+}
+
+.contactNav {
+    display: flex;
+    flex-direction: column;
+    nav {
+        ul {
+            display: flex;
+            li {
+                margin-right: 25px;
+            }
+            i {
+                color: $green;
+            }
+        }
+    }
+}

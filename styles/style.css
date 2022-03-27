@@ -758,6 +758,36 @@ span a {
   list-style: inside;
 }
 
+.contact-main {
+  background-color: #F0EFED;
+}
+.contact-main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactNav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactNav nav ul li {
+  margin-right: 25px;
+}
+.contactNav nav ul i {
+  color: #0E902D;
+}
+
 @media (min-width: 660px) {
   .accent-image {
     width: 35%;
@@ -842,6 +872,7 @@ span a {
   header nav {
     position: static;
     padding: 0 50px;
+    background-color: transparent;
   }
   header nav ul {
     -webkit-box-orient: horizontal;
@@ -1005,7 +1036,7 @@ span a {
 }
 /* Form template taken from Juno WebDev Bootcamp Code-along */
 .contactForm {
-  width: calc(50% - 70px);
+  width: calc(100% - 70px);
   margin-left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
