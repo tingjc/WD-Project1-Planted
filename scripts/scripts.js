@@ -24,7 +24,7 @@ selectCommentForm.addEventListener('submit', function(event) {
         commentParentDiv.classList.add(`comment`);
         commentParentDiv.innerHTML = `
             <div class="img-container">
-                <img src="https://placebear.com/200/200" alt="profile picture">
+                <img src="https://placebear.com/100/100" alt="profile picture">
             </div>`
         //create text div
         const commentTextDiv = document.createElement('div');
